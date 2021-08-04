@@ -1,0 +1,20 @@
+header, footer{
+	background: #F2F2F2;
+}
+#finder{
+	background: skyblue;
+}
+#filter, #research, #filter_list{
+	border: 1px white solid;
+}
+#accomodation_section{
+	background: indianred;
+}
+#finded_accomodation, #popular_accomodation, #activities_section{
+	border: 5px black solid;
+}
+.accomodation_cards, .activities_cards{
+	background: lightyellow;	
+	min-height: 20rem;
+	margin: 2rem;
+}
