@@ -1,4 +1,18 @@
-header, footer{
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main_wrapper{
+	width: 100%;
+}
+body{
+	font-family: 'Raleway',sans-serif,Verdana;
+}
+
+header, footer, #popular_accomodation{
 	background: #F2F2F2;
 }
 #finder{
@@ -7,9 +21,7 @@ header, footer{
 #filter, #research, #filter_list{
 	border: 1px white solid;
 }
-#accomodation_section{
-	background: indianred;
-}
+
 #finded_accomodation, #popular_accomodation, #activities_section{
 	border: 5px black solid;
 }
