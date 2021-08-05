@@ -69,13 +69,18 @@
 			border: 2px #0065FC solid;
 		}
 
-		#finded_accomodation, #activities_section{
+		#finded_accomodation, #activities_section, #popular_accomodation{
 			border: 5px black solid;
+			padding: 2rem;
 		}
 		.accomodation_cards, .activities_cards{
 			background: lightyellow;	
 			min-height: 30rem;
-			margin: 2rem;
+			margin-bottom: 2rem;
 		}
 
+		button{
+			width: 100%;
+			margin: auto;
+		}
 /*ajout de la partie desct*/
