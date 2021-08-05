@@ -1,32 +1,80 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway/Raleway-VariableFont_wght.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
+/*Raleway font import*/
+	@font-face {
+	    font-family: 'Raleway';
+	    src: url('Raleway/static/Raleway-Regular.ttf');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	@font-face {
+	    font-family: 'Raleway-ExtraBold';
+	    src: url('Raleway/static/Raleway-ExtraBold.ttf');
+	    font-weight: normal;
+	    font-style: normal;
+	}
 
-#main_wrapper{
-	width: 100%;
-}
-body{
-	font-family: 'Raleway',sans-serif,Verdana;
-}
+/*mobile part styling media querries need to added*/
+	#main_wrapper{
+		width: 100%;
+	}
+	/*General styling*/
+	body{
+		font-family: 'Raleway',sans-serif,Verdana;
+	}
+	h1{
+		font-family: 'Raleway-ExtraBold' ;
+		font-size: 2.5rem;
+	}
 
-header, footer, #popular_accomodation{
-	background: #F2F2F2;
-}
-#finder{
-	background: skyblue;
-}
-#filter, #research, #filter_list{
-	border: 1px white solid;
-}
+	/*header styling*/
+		/*using flexbox for placing the blocks*/
+		header{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			font-size: 2.5rem;
+		}
+		nav{
+			width: 100%;
+		}
+		/*layout of the navigation bar*/
+			nav ul{
+				display: flex;
+				list-style: none;
+				padding: 0;
+			}
+			nav li{
+				width: 50%;
+				display: flex;
+				text-align: center;
+			}
+			nav	a{
+				flex: 1;
+				text-decoration: none;
+				color: #000000;
+				border-bottom: 0.4rem solid #F2F2F2;
+			}
+			nav a:hover{
+				color: #0065FC;
+				border-bottom: 0.4rem solid #0065FC;
+			}
+	/*footer styling*/
+		footer{
+			background: #F2F2F2;
+		}
+	/*draft section*/
+		#finder{
+			border: 5px #0065FC solid;
+		}
+		#filter, #research, #filter_list{
+			border: 2px #0065FC solid;
+		}
 
-#finded_accomodation, #popular_accomodation, #activities_section{
-	border: 5px black solid;
-}
-.accomodation_cards, .activities_cards{
-	background: lightyellow;	
-	min-height: 20rem;
-	margin: 2rem;
-}
+		#finded_accomodation, #activities_section{
+			border: 5px black solid;
+		}
+		.accomodation_cards, .activities_cards{
+			background: lightyellow;	
+			min-height: 30rem;
+			margin: 2rem;
+		}
+
