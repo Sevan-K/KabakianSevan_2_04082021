@@ -24,14 +24,13 @@
 		font-family: 'Raleway-ExtraBold' ;
 		font-size: 2.5rem;
 	}
-
 	/*header styling*/
 		/*using flexbox for placing the blocks*/
 		header{
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
-			font-size: 2.5rem;
+			align-items: center;
 		}
 		nav{
 			width: 100%;
@@ -43,7 +42,7 @@
 				padding: 0;
 			}
 			nav li{
-				width: 50%;
+				flex: 1;
 				display: flex;
 				text-align: center;
 			}
@@ -51,36 +50,58 @@
 				flex: 1;
 				text-decoration: none;
 				color: #000000;
+				font-size: 2.7rem;
+				padding-bottom: 5%;
 				border-bottom: 0.4rem solid #F2F2F2;
 			}
 			nav a:hover{
 				color: #0065FC;
 				border-bottom: 0.4rem solid #0065FC;
 			}
+			#logo_reservia{
+				border: 1px solid black;
+				margin: 0 5%;
+				width: 25%;
+			}
+			#logo_reservia img{
+				width: 100%;
+			}
+			#signin{
+				color: #0065FC;
+				font-size: 2.2rem;
+				font-weight: bold;
+				margin: 0 5%;
+			}
 	/*footer styling*/
 		footer{
 			background: #F2F2F2;
-		}
-	/*draft section*/
-		#finder{
-			border: 5px #0065FC solid;
-		}
-		#filter, #research, #filter_list{
-			border: 2px #0065FC solid;
+			font-size: ;
 		}
 
-		#finded_accomodation, #activities_section, #popular_accomodation{
-			border: 5px black solid;
-			padding: 2rem;
-		}
-		.accomodation_cards, .activities_cards{
-			background: lightyellow;	
-			min-height: 30rem;
-			margin-bottom: 2rem;
-		}
+/*ajout de la partie pc*/
+@media screen and (min-width: 768px){
 
-		button{
-			width: 100%;
-			margin: auto;
-		}
-/*ajout de la partie desct*/
+}
+
+/*draft section*/
+	#finder{
+		border: 5px #0065FC solid;
+	}
+	#filter, #research, #filter_list{
+		border: 2px #0065FC solid;
+	}
+
+	#finded_accomodation, #activities_section, #popular_accomodation{
+		border: 5px black solid;
+		padding: 2rem;
+	}
+	.accomodation_cards, .activities_cards{
+		background: lightyellow;	
+		min-height: 30rem;
+		margin-bottom: 2rem;
+	}
+	button{
+		width: 100%;
+		margin: auto;
+	}
+
