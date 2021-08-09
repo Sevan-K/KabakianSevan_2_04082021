@@ -13,7 +13,7 @@
 	}
 
 /*mobile part styling media querries need to added*/
-	#main_wrapper{
+#main_wrapper{
 		width: 100%;
 	}
 	/*General styling*/
@@ -79,11 +79,7 @@
 		}
 
 /*ajout de la partie pc*/
-@media screen and (min-width: 780px){
-	/*header styling*/
-	header{
-		border: 1px solid black;
-	}
+@media only screen and (min-width: 780px){
 	#signin{
 		order: 3;
 		/*margin: 0;*/
@@ -107,7 +103,6 @@
 	}
 	#logo_reservia{
 		width: 10%;
-		border: 1px solid black;
 		margin: 0;
 		flex: 1;
 	}
