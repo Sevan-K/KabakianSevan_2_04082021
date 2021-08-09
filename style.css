@@ -22,7 +22,7 @@
 	}
 	h1{
 		font-family: 'Raleway-ExtraBold' ;
-		font-size: 2.5rem;
+		font-size: 2vw;
 	}
 	/*header styling*/
 		/*using flexbox for placing the blocks*/
@@ -88,7 +88,6 @@
 				align-items: center;
 			}
 			div.title p{
-				fill: yellow;
 				width: 5%;
 				height: 5%;
 			}
@@ -97,7 +96,10 @@
 				height: auto;
 			}
 		/*finded_accomodation styling*/
-
+			#finded_accomodation p{
+				font-size: 1.5vw;
+				font-weight: bold;
+			}
 		/*cards styling*/
 			.accomodation_container{
 				display: flex;
@@ -155,21 +157,27 @@
 	/*accomodation styling*/
 		#accomodation_section{
 			display: flex;
-			flex-wrap: wrap;
 		}
 		#finded_accomodation{
 			order: 1;
 			flex: 2;
+			background: #F2F2F2;
 		}
 		#finded_accomodation .accomodation_container{
 			flex-direction: row;
+			flex-wrap: wrap;
 		}
 		#finded_accomodation .accomodation_cards{
-			min-width: 30%;
+			width: 30%;
 		}
 		#popular_accomodation{
 			order: 2;
 			flex: 1;
+		}
+		#popular_accomodation, #finded_accomodation{
+			background: #F2F2F2;
+			border-radius: 20px;
+			margin: 2vw;
 		}
 	}
 
