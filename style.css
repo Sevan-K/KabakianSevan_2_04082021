@@ -79,24 +79,42 @@
 		}
 
 /*ajout de la partie pc*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 780px){
 	/*header styling*/
 	header{
-		flex-wrap: nowrap;
+		border: 1px solid black;
 	}
 	#signin{
 		order: 3;
-	}
-	nav	a{
-		padding: 5%;
+		/*margin: 0;*/
 	}
 	#signin, nav a{
-		font-size: 1.5vw;
+		font-size: 1.4vw;
 	}
 	nav{
 		width: 20%;
+		min-width: 250px;
 	}
-
+	nav	a{
+		padding: 5%;
+		border-bottom: none;
+		border-top: 3px solid #F2F2F2;
+	}
+	nav a:hover{
+		color: #0065FC;
+		border-top: 3px solid #0065FC;
+		border-bottom: none;
+	}
+	#logo_reservia{
+		width: 10%;
+		border: 1px solid black;
+		margin: 0;
+		flex: 1;
+	}
+	#logo_reservia img{
+		width: 12.5%;
+	}
+}
 
 /*draft section*/
 	#finder{
