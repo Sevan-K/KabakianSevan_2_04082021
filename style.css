@@ -111,11 +111,31 @@
 				margin-bottom: 20px;
 			}
 			#popular_accomodation .accomodation_cards{
-				height: 20vw;
+				height: 35vw;
 			}
 			#finded_accomodation .accomodation_cards{
 				height: 30vw;
 			}
+			#popular_accomodation .accomodation_cards:nth-child(1) {
+				display: flex;
+				overflow: hidden;
+				padding: 0;
+				border: 10px white solid;
+				border-radius: 30px;
+			}
+			#popular_accomodation .accomodation_cards:nth-child(1) div{
+				flex: 2;
+				text-align: left;
+			}
+			.pic_container{
+				flex: 1;
+				height: 100%;
+				margin: 0;
+				background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
+				background-size: cover ;
+				background-position: center;
+			}
+
 	/*footer styling*/
 		footer{
 			background: #F2F2F2;
