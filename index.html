@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Reservia - Hébergements et activités pour vos vacances</title>
+	<!-- for mobile to adapt to media querries -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<script src="https://kit.fontawesome.com/be8e39ade2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-- main wrapper if needed -->
@@ -41,44 +44,46 @@
 			<aside id="popular_accomodation">
 				<div class="title">
 					<h1>Les plus populaire</h1>
-					<p><img src="icons/chart-line-solid.svg" alt="iconne de graphique"></p>
+					<!-- <p><img src="icons/chart-line-solid.svg" alt="iconne de graphique"></p> -->
+					<p><i class="fas fa-chart-line"></i></p>
+
 				</div>				
-				<div class="accomodation_container">
-					<!-- use of button for the cards to be fully clickable -->
-					<button class="accomodation_cards">
+				<div class="cards_container">
+					<!-- use of a for the cards to be fully clickable -->
+					<a href="#" class="accomodation_cards">
 						<p class="pic_container"></p>
 						<div>
 							<h2>Hôtel Le Soleil du matin</h2>
 							<p>Nuit à partir de 128<strong>€</strong></p>
 						</div>
-					</button>
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
+					</a>
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
 				</div>
 			</aside>
-			<div id="finded_accomodation">				
+			<article id="finded_accomodation">				
 				<h1>Hébergements à Marseille</h1>
-				<div class="accomodation_container">
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
-					<button class="accomodation_cards"></button>
+				<div class="cards_container">
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
+					<a class="accomodation_cards"></a>
 				</div>
 				<p>Afficher plus</p>
-			</div>			
+			</article>			
 		</section>
 		<!-- activities section -->
 		<section id="activities_section">
 			<h1>Activités à Marseille</h1>
-			<div id="activities_container">
-				<button class="activities_cards"></button>
-				<button class="activities_cards"></button>
-				<button class="activities_cards"></button>
-				<button class="activities_cards"></button>
-				<button class="activities_cards"></button>
-				<button class="activities_cards"></button>
+			<div class="cards_container">
+				<a class="activities_cards"></a>
+				<a class="activities_cards"></a>
+				<a class="activities_cards"></a>
+				<a class="activities_cards"></a>
+				<a class="activities_cards"></a>
+				<a class="activities_cards"></a>
 			</div>
 		</section>		
 		<!-- footer set up -->
