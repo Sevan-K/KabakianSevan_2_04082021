@@ -14,18 +14,21 @@
 
 /*mobile part styling media querries need to added*/
 	#main_wrapper{
-		width: 100%;
-	}
+		width: 100%;	}
 	/*General styling*/
 	body{
 		font-family: 'Raleway',sans-serif,Verdana;
+		font-size: 0.8rem;
 	}
 	h1{
 		font-family: 'Raleway-ExtraBold' ;
-		font-size: 3rem;
+		font-size: 1.4rem;
 	}
 	h2{
-		font-size: 2rem;
+		font-size: 0.9rem;
+	}
+	h1, h2,h3,p{
+		margin: 0;
 	}
 	/*header styling*/
 		/*using flexbox for placing the blocks*/
@@ -53,7 +56,7 @@
 				flex: 1;
 				text-decoration: none;
 				color: #000000;
-				font-size: 3rem;
+				font-size: 1rem;
 				border-bottom: 0.7vw solid #F2F2F2;
 				padding-bottom: 5%;
 			}
@@ -71,74 +74,32 @@
 			#signin{
 				font-family: 'Raleway-ExtraBold' ;
 				color: #0065FC;
-				font-size: 2.3rem;
+				font-size: 1rem;
 				margin: 0 5%;
 			}
 	/*accomodation styling*/
-		#popular_accomodation, #finded_accomodation, #activities_section{
-				margin-top: 20px;
-				padding: 3vw;
+		#accomodation_section{
 		}
+		#popular_accomodation, #finded_accomodation, #activities_section{
+				margin-top: 5vw;
+				padding: 4vw;
+			}
 		/*popular_accomodation styling*/
 			#popular_accomodation{
 				background: #F2F2F2;
-				height: 130vw;
 			}
 			div.title{
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				margin: 4vw 2vw;
 			}
 			div.title p{
-				font-size: 1.5rem;	
+				font-size: 1.4rem;	
 			}
-		/*finded_accomodation styling*/
-			#finded_accomodation p{
-				font-size: 1rem;
-				font-weight: bold;
-			}
-	/*cards styling*/
-		.cards_container{
-			height: 90%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		.accomodation_cards, .activities_cards{
-			text-decoration: none;
-			color: black;
-			background: white;	
-			width: 95%;
-			margin-bottom: 4vw;
-			padding: 0;
-			border-radius: 5vw;
-			box-shadow: 0vw 0vw 1.5vw rgba(0, 0, 0, 0.4);
-			min-height: 10vw;
-		}
-		.accomodation_cards{
-			border: 1vw white solid;	
-		}	
-		.accomodation_cards:hover, .activities_cards:hover{
-			transform: scale(1.02) ;
-			/*background: content-box radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));*/
-		}
-		.star_container{
-			display: inline-flex;
-		}
-		.blue_star{
-			color: #0065FC;
-		}
-		.grey_star{
-			color: #F2F2F2;
-		}
 		/*popular_accomodation cards styling*/
-			#popular_accomodation .accomodation_cards{
-				flex: 1;
-			}
-			/*à modifier !!!!!!!!!!!!!*/
 			#popular_accomodation .accomodation_cards {
 				display: flex;
-				overflow: hidden;
 			}
 			#popular_accomodation .accomodation_cards div{
 				width: 67%;
@@ -148,11 +109,10 @@
 				width: 33%;
 				margin: 0;
 			}
-			#popular_accomodation .text_container{
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				padding-left: 5%;
+
+			#popular_accomodation h2 + p{
+				margin-top: 5%;
+				margin-bottom: 20%;
 			}
 			#pc1{
 				background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
@@ -169,6 +129,77 @@
 				background-size: cover ;
 				background-position: center;
 			}			
+		/*finded_accomodation styling*/
+			#finded_accomodation p: last-child{
+				font-size: 1rem;
+				font-weight: bold;
+			}
+			#finded_accomodation h1{
+				margin: 4vw 0vw;
+			}
+			#finded_accomodation h2 + p{
+				margin: 2% 0%;
+			}
+		/*finded_accomodation cards styling*/
+			#finded_accomodation .accomodation_cards{
+				display: flex;
+				flex-direction: column;
+			}
+			#finded_accomodation .pic_container{
+				flex: 2;
+				max-height: 30vw;
+				overflow: hidden;
+			}
+			#finded_accomodation .pic_container img{
+				object-fit: cover;
+				position: relative;
+				bottom: 10vw;
+				width: 100%;
+			}
+			#finded_accomodation .text_container{
+				flex: 1;
+			}
+	/*cards styling*/
+		.cards_container{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 5%;
+		}
+		.accomodation_cards, .activities_cards{
+			text-decoration: none;
+			color: black;
+			background: white;	
+			width: 95%;
+			margin-bottom: 4vw;
+			padding: 0;
+			border-radius: 5vw;
+			box-shadow: 0vw 0vw 1.5vw rgba(0, 0, 0, 0.4);
+			min-height: 10vw;
+			overflow: hidden;
+		}
+		.accomodation_cards{
+			border: 1vw white solid;	
+		}	
+		.accomodation_cards:hover, .activities_cards:hover{
+			transform: scale(1.02) ;
+			/*background: content-box radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));*/
+		}
+		.text_container{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 5% 0% 2% 5%;
+		}
+		.star_container{
+			display: inline-flex;
+		}
+		.blue_star{
+			color: #0065FC;
+		}
+		.grey_star{
+			color: #F2F2F2;
+		}
 	/*footer styling*/
 		footer{
 			background: #F2F2F2;
