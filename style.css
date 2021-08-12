@@ -87,6 +87,56 @@
 		#finder{
 			margin-top: 5%;
 		}
+		#finder h1, #finder h2{
+			margin-bottom: 3%;
+		}
+		#info{
+			display: flex;
+		}
+		#info p:first-child{
+			color: #0065FC;
+			border: 1px solid #F2F2F2;
+			height: 20px;
+			width: 25px;
+			border-radius: 30px;
+			text-align: center;
+			}
+		#info i{
+			vertical-align: middle;
+		}
+		/*resear toolbar styling*/
+			form{
+				border: 1px solid #F2F2F2;
+				width: 90%;
+				justify-content: space-between;
+				display: flex;
+				overflow: hidden;
+				padding: 0;
+				margin: 7vw 0vw;
+			}
+			form p, form{
+				border-radius: 0.8rem;
+			}
+			label{
+				background: #F2F2F2;
+			}
+			form p{
+				background: #0065FC;
+				color: white;
+			}
+			label, form p{
+				margin: 0;
+				padding: 4% 5%;
+				font-size: 1rem;
+			}
+			#research{
+				flex: 1;
+				border: none;
+				max-width: 65%;
+				padding: 0% 5%;
+				font-family: 'Raleway-ExtraBold';
+				font-size: 90%;
+			}
 	/*cards styling*/
 		.cards_container{
 			display: flex;
@@ -129,7 +179,7 @@
 	/*accomodation styling*/
 		#accomodation_section{
 		}
-		#popular_accomodation, #finded_accomodation, #activities_section, footer{
+		#popular_accomodation, #finded_accomodation, #activities_section, footer, #finder{
 				margin-top: 5vw;
 				padding: 4vw;
 			}
@@ -328,8 +378,5 @@
 /*draft section*/
 	#finder{
 		border: 5px #0065FC solid;
-	}
-	#filter, #research, #filter_list{
-		border: 2px #0065FC solid;
 	}
 

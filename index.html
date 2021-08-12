@@ -27,9 +27,12 @@
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 			<!-- research bar - to do -->
-			<div id="research">
-				<p>Recherche</p>
-			</div>
+			<form method="post" action="">
+					<label for="research"><i class="fas fa-map-marker-alt"></i></label>
+					<input type="search" name="research" id="research" value="Marseille, France">
+					<p><i class="fas fa-search"></i></p>
+					<!-- <input type="submit" value="Rechercher"> -->
+			</form>
 			<!-- filters set up -->
 			<div id="filter">
 				<h2>Filtres</h2>
@@ -37,7 +40,10 @@
 					<p>économique</p>
 				</div>
 			</div>
-			<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			<div id="info">
+				<p><i class="fas fa-info" ></i></p>
+				<p>Plus de 500 logements sont disponibles dans cette ville</p>
+			</div>
 		</div>
 		<!-- accomodation section grouping accomodation in Marseille and the most popular list -->
 		<section id="accomodation_section">
