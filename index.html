@@ -22,22 +22,28 @@
 				</ul>
 			</nav>
 		</header>
-		<!-- research and filter part -->
+		<!-- research and filter parts -->
 		<div id="finder">
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
-			<!-- research bar - to do -->
+			<!-- research bar -->
 			<form method="post" action="">
 					<label for="research"><i class="fas fa-map-marker-alt"></i></label>
 					<input type="search" name="research" id="research" value="Marseille, France">
 					<p><i class="fas fa-search"></i></p>
 					<!-- <input type="submit" value="Rechercher"> -->
 			</form>
-			<!-- filters set up -->
+			<!-- filters part -->
 			<div id="filter">
 				<h2>Filtres</h2>
 				<div id="filter_list">
-					<p>économique</p>
+					<button>
+						<p><i class="fas fa-money-bill-wave"></i></p>
+						<p>Economique</p>
+					</button>
+					<button>Familial</button>
+					<button>Romantique</button>
+					<button>Animaux autorisés</button>
 				</div>
 			</div>
 			<div id="info">
@@ -198,7 +204,7 @@
 						</div>
 					</a>			
 				</div>
-				<p>Afficher plus</p>
+				<p id="show_more">Afficher plus</p>
 			</article>			
 		</section>
 		<!-- activities section -->
@@ -237,7 +243,7 @@
 				</a>
 			</div>
 		</section>		
-		<!-- footer set up -->
+		<!-- footer -->
 		<footer>
 			<div>
 				<h3>A propos</h3>

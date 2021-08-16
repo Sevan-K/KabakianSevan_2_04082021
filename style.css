@@ -92,6 +92,7 @@
 		}
 		#info{
 			display: flex;
+			margin-top: 5%;
 		}
 		#info p:first-child{
 			color: #0065FC;
@@ -110,7 +111,6 @@
 				width: 90%;
 				justify-content: space-between;
 				display: flex;
-				overflow: hidden;
 				padding: 0;
 				margin: 7vw 0vw;
 			}
@@ -119,6 +119,8 @@
 			}
 			label{
 				background: #F2F2F2;
+				border-top-left-radius: 0.8rem;
+				border-bottom-left-radius: 0.8rem;
 			}
 			form p{
 				background: #0065FC;
@@ -136,6 +138,43 @@
 				padding: 0% 5%;
 				font-family: 'Raleway-ExtraBold';
 				font-size: 90%;
+			}
+		/*filters styling*/
+/*			button{
+				background: white;
+				border: 2px solid #F2F2F2;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0;
+			}
+			button, button p:first-child{
+				border-radius: 20px;				
+			}
+			button p:first-child{
+				background: #DEEBFF;
+				color: #0065FC;
+			}
+			button p{
+				padding: 10px;
+			}*/
+			button{
+				background: white;
+				border: none;
+				font-size: 1rem;
+			}
+			button p:first-child{
+				background: #DEEBFF;
+				border-radius: 30px;
+				color: #0065FC;
+				float: left;
+				padding: 15px;
+			}
+			button p + p{
+				padding: 12px 15px 12px 60px;
+				border: 2px solid #F2F2F2;
+				border-radius: 30px;
+				font-weight: bold;
 			}
 	/*cards styling*/
 		.cards_container{
@@ -174,7 +213,7 @@
 			color: #0065FC;
 		}
 		.grey_star{
-			color: #F2F2F2;
+			color: #D9D9D9;
 		}
 	/*accomodation styling*/
 		#accomodation_section{
@@ -229,7 +268,7 @@
 				background-position: center;
 			}			
 		/*finded_accomodation styling*/
-			#finded_accomodation p:last-child{
+			#show_more{
 				font-size: 1rem;
 				font-weight: bold;
 			}
@@ -374,9 +413,3 @@
 			margin: 2vw;
 		}
 	}
-
-/*draft section*/
-	#finder{
-		border: 5px #0065FC solid;
-	}
-
