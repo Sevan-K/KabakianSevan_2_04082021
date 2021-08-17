@@ -34,16 +34,27 @@
 					<!-- <input type="submit" value="Rechercher"> -->
 			</form>
 			<!-- filters part -->
-			<div id="filter">
-				<h2>Filtres</h2>
-				<div id="filter_list">
-					<button>
+			<h2>Filtres</h2>
+			<div id="filter_list">
+				<div class="filters_container row_filters_container">
+					<button class="filter">
 						<p><i class="fas fa-money-bill-wave"></i></p>
-						<p>Economique</p>
+						<p class="filter_label">Economique</p>
 					</button>
-					<button>Familial</button>
-					<button>Romantique</button>
-					<button>Animaux autorisés</button>
+					<button class="filter">
+						<p><i class="fas fa-child"></i></p>
+						<p class="filter_label">Familial</p>
+					</button>
+				</div>
+				<div class="filters_container">
+					<button class="filter">
+						<p><i class="fas fa-heart"></i></p>
+						<p class="filter_label">Romantique</p>
+					</button>
+					<button class="filter">
+						<p><i class="fas fa-dog"></i></i></p>
+						<p class="filter_label">Animaux autorisés</p>
+					</button>
 				</div>
 			</div>
 			<div id="info">
@@ -67,8 +78,14 @@
 								<h2>Hôtel Le Soleil du matin</h2>
 								<p>Nuit à partir de 128<strong>€</strong></p>
 							</div>
-							<p class="blue_star">
-								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							<!-- all the stars are in the same container -->
+							<p class="star_container">
+								<!-- a class has been added to change the color -->
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
 							</p>
 						</div>
 					</a>
@@ -79,14 +96,13 @@
 								<h2>Au coeur de l'eau <br />Chambre d'hôtes</h2>
 								<p>Nuit à partir de 71<strong>€</strong></p>
 							</div>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>
 					</a>
 					<a href="#" class="cards">
@@ -96,14 +112,13 @@
 								<h2>Hôtel Tout bleu et Blanc</h2>
 								<p>Nuit à partir de 68<strong>€</strong></p>
 							</div>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>
 					</a>
 				</div>
@@ -118,14 +133,13 @@
 						<div class="text_container">
 							<h2>Auberge de la cannebière</h2>
 							<p>Nuit à partir de 25<strong>€</strong></p>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>
 					</a>			
 					<a href="#" class="cards" >
@@ -135,8 +149,13 @@
 						<div class="text_container">
 							<h2>Hôtel du port</h2>
 							<p>Nuit à partir de 52<strong>€</strong></p>
-							<p class="blue_star">
-								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							<p class="star_container">
+								<!-- a class has been added to change the color -->
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
 							</p>
 						</div>
 					</a>
@@ -147,14 +166,13 @@
 						<div class="text_container">
 							<h2>Hôtel Les mouettes</h2>
 							<p>Nuit à partir de 76<strong>€</strong></p>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>
 					</a>					
 					<a href="#" class="cards">
@@ -164,14 +182,13 @@
 						<div class="text_container">
 							<h2>Hôtel de la mer</h2>
 							<p>Nuit à partir de 46<strong>€</strong></p>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>					
 					</a>
 					<a href="#" class="cards">
@@ -181,14 +198,13 @@
 						<div class="text_container">
 							<h2>Auberge Le Panier</h2>
 							<p>Nuit à partir de 23<strong>€</strong></p>
-							<div class="star_container">
-								<p class="blue_star">
-									<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-								</p>
-								<p class="grey_star">
-									<i class="fas fa-star"></i>
-								</p>
-							</div>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star grey_star"></i>
+							</p>
 						</div>
 					</a>
 					<a href="#" class="cards">
@@ -198,8 +214,12 @@
 						<div class="text_container">
 							<h2>Hôtel chez Amina</h2>
 							<p>Nuit à partir de 96<strong>€</strong></p>
-							<p class="blue_star">
-								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+							<p class="star_container">
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
+								<i class="fas fa-star blue_star"></i>
 							</p>
 						</div>
 					</a>			
