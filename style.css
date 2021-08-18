@@ -186,7 +186,6 @@
 			padding: 0;
 			border-radius: 20px;
 			box-shadow: 0vw 0vw 1.5vw rgba(0, 0, 0, 0.4);
-			min-height: 10vw;
 			overflow: hidden;
 		}
 		#accomodation_section .cards{
@@ -225,13 +224,13 @@
 			#popular_accomodation{
 				background: #F2F2F2;
 			}
-			div.title{
+			.title{
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 				margin: 4vw 2vw;
 			}
-			div.title p{
+			.title p{
 				font-size: 1.4rem;	
 			}
 		/*popular_accomodation cards styling*/
@@ -283,7 +282,6 @@
 				flex-direction: column;
 			}
 			#finded_accomodation .pic_container{
-				flex: 2;
 				max-height: 30vw;
 				overflow: hidden;
 			}
@@ -299,13 +297,10 @@
 				bottom: 72px;
 			}
 			#pc9 img{
-				bottom: 45vw;
-			}
-			#finded_accomodation .text_container{
-				flex: 1;
+				bottom: 150px;
 			}
 	/*activities styling*/
-		#activities_section p{
+		#activities_section .pic_container{
 			height: 35vw;
 		}
 		#activities_section h2{
@@ -359,7 +354,7 @@
 @media screen and (min-width: 768px){
 	/*général styling*/
 		#main_wrapper{
-			width: 90%;
+			width: 95%;
 			margin: auto;
 		}
 	/*header styling*/
@@ -415,32 +410,75 @@
 			width: 45%;
 			height: 200px;
 		}
-
-
+		footer{
+			display: flex;
+		}
+		footer div{
+			margin-right: 10%;
+		}
 }
 /*ajout de la partie pc*/
 @media screen and (min-width: 1024px){
+	/*general styling*/
+		body{
+			font-size: 0.6rem;
+		}
+		h1{
+			font-size: 0.9rem;
+		}
+		h2{
+			font-size: 0.6rem;
+		}
 	/*header styling*/
 		#logo_reservia img{
 			width: 15%;
+		}
+	/*finder styling*/
+		#filter_list{
+			display: flex;
 		}
 	/*accomodation styling*/
 		#accomodation_section{
 			display: flex;
 		}
+		#accomodation_section .cards{
+			border: 3px white solid;
+			margin-bottom: 2vw;	
+		}	
 		#popular_accomodation{
 			order: 2;
-			width: 30%;
-			max-height: 60vw;
+			width: 25%;
 		}
 		#popular_accomodation, #finded_accomodation{
 			background: #F2F2F2;
 			border-radius: 20px;
 			margin: 2vw;
 		}
+		.title, #finded_accomodation h1, #activities_section h1{
+			margin: 1vw 0 2vw 0;
+		}
 		#finded_accomodation{
 			order: 1;
 			background: #F2F2F2;
 			width: 60%;
+		}
+		#finded_accomodation .cards{
+			width: 28%;
+			height: 11vw;
+		}
+		#pc4 img, #pc5 img,#pc6 img {
+			bottom: 15px;
+		}	
+		#pc7 img{
+			bottom: 20px;
+		}
+		#pc8 img{
+			bottom: 0px;
+		}
+		#pc9 img{
+			bottom: 65px;
+		}
+		#popular_accomodation, #finded_accomodation, #activities_section{
+			padding: 3vw;
 		}
 	}
