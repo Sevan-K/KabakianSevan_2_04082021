@@ -144,6 +144,9 @@
 			.row_filters_container{
 				display: flex;
 			}
+			.column_filters_container{
+				display: block;
+			}
 			.filter{
 				background: white;
 				border: none;
@@ -277,7 +280,7 @@
 				margin: 2% 0%;
 			}
 		/*finded_accomodation cards styling*/
-			#finded_accomodation .cards{
+			#finded_accomodation .cards, #activities_section .cards{
 				display: flex;
 				flex-direction: column;
 			}
@@ -297,7 +300,7 @@
 				bottom: 72px;
 			}
 			#pc9 img{
-				bottom: 150px;
+				bottom: 180px;
 			}
 	/*activities styling*/
 		#activities_section .pic_container{
@@ -350,12 +353,15 @@
 			margin: 2% 0%;
 		}
 
-/*design for tablets*/
+/*mediaquerries for tablets that are also valid for PC*/
 @media screen and (min-width: 768px){
 	/*général styling*/
 		#main_wrapper{
 			width: 95%;
 			margin: auto;
+		}
+		#activities_section{
+			padding: 0;
 		}
 	/*header styling*/
 		#signin{
@@ -382,9 +388,6 @@
 			margin: 0;
 			flex: 1;
 		}
-		#logo_reservia img{
-			width: 25%;
-		}
 	/*finder styling*/
 		#finder{
 			padding: 0;
@@ -395,29 +398,69 @@
 		form{
 			margin: 2% 0% 3% 0%;
 		}
+		.filters_container{
+			display: flex;
+			flex-direction: row;
+		}
+	/*accomodation styling*/
+		.title, #finded_accomodation h1, #activities_section h1{
+			margin: 1vw 0 2vw 0;
+		}
 	/*popular_accomodation styling*/
 		#popular_accomodation, #finded_accomodation{
 				background: #F2F2F2;
 				border-radius: 20px;
-				margin: 5% 0;
 		}
 	/*finded_accomodation styling*/
+		/*This cards container become a raw flex*/
 		#finded_accomodation .cards_container{
 			flex-flow: row wrap;
 			justify-content: space-between;	
 		}
-		#finded_accomodation .cards{
-			width: 45%;
-			height: 200px;
+	/*activities_section styling*/
+		#activities_section .cards_container{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			align-items: center;
 		}
+	/*footer styling*/
 		footer{
 			display: flex;
 		}
 		footer div{
+			padding: 0;
+		}
+}
+/*mediaquerries only for tablets*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	/*general styling*/
+		#popular_accomodation, #finded_accomodation, footer{
+			padding: 3vw;
+		}
+	/*header styling*/
+		#logo_reservia img{
+			width: 25%;
+		}
+	/*finded_accomodation styling*/
+		#finded_accomodation .cards{
+			width: 45%;
+			height: 27vw;
+		}
+	/*activities_section styling*/
+		#activities_section .cards_container{
+			height: 140vw;
+		}
+		#activities_section .cards{
+			width: 47%;
+		}
+	/*footer styling*/
+		footer div{
 			margin-right: 10%;
 		}
 }
-/*ajout de la partie pc*/
+/*mediaquerries only for desktop*/
 @media screen and (min-width: 1024px){
 	/*general styling*/
 		body{
@@ -429,6 +472,16 @@
 		h2{
 			font-size: 0.6rem;
 		}
+		#popular_accomodation, #finded_accomodation{
+			padding: 1vw 3vw;
+		}
+
+		#accomodation_section, #finder, #activities_section{
+			margin-top: 15px;
+		}
+		.cards_container{
+			margin-top: 0;
+		}
 	/*header styling*/
 		#logo_reservia img{
 			width: 15%;
@@ -436,8 +489,16 @@
 	/*finder styling*/
 		#filter_list{
 			display: flex;
+			align-items: center;
+		}
+		#filter_list h2{
+			margin-bottom: 0;
+		}
+		.filter{
+			margin-left: 15px;
 		}
 	/*accomodation styling*/
+		/*changing order of finded_accomodation and popular accomodation*/
 		#accomodation_section{
 			display: flex;
 		}
@@ -452,10 +513,11 @@
 		#popular_accomodation, #finded_accomodation{
 			background: #F2F2F2;
 			border-radius: 20px;
-			margin: 2vw;
+			margin-top: 0;
 		}
-		.title, #finded_accomodation h1, #activities_section h1{
-			margin: 1vw 0 2vw 0;
+		#popular_accomodation, #finded_accomodation, #activities_section{
+			margin-right: 1vw;
+			margin-left: 1vw;
 		}
 		#finded_accomodation{
 			order: 1;
@@ -478,7 +540,38 @@
 		#pc9 img{
 			bottom: 65px;
 		}
-		#popular_accomodation, #finded_accomodation, #activities_section{
-			padding: 3vw;
+	/*activities_section styling*/
+		#activities_section{
+			padding: 1vw 0vw;
 		}
-	}
+		#activities_section .cards_container{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			align-items: center;
+			height: 40vh;
+		}
+		#activities_section .cards{
+			width: 22%;
+			margin: 0;
+		}
+		/*sizing of activity section's cards */
+		#activities_section .cards:nth-child(3n+1){
+			height: 100%;
+		}
+		#activities_section .cards:nth-child(4n+2){
+			height: 56%;
+		}		
+		#activities_section .cards:nth-child(2n+3){
+			height: 36%;
+		}
+	/*footer styling*/
+		footer div{
+			padding: 0;
+			margin-right: 20%;
+		}
+		footer li{
+			margin: 5% 0%;
+		}
+}
