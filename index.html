@@ -27,11 +27,13 @@
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 			<!-- research bar -->
-			<form method="post" action="#">
-					<label for="research"><i class="fas fa-map-marker-alt"></i></label>
+			<form method="post" action="#" id="research_container">
+					<label for="research" id="research_label"><i class="fas fa-map-marker-alt"></i></label>
 					<input type="search" name="research" id="research" value="Marseille, France">
-					<p><i class="fas fa-search"></i></p>
-					<!-- <input type="submit" value="Rechercher"> -->
+					<!-- <p><i class="fas fa-search"></i></p> -->		
+					<!-- <input type="submit" id="submit_research" value="Rechercher"> -->
+					<button type="submit" id="mobile_research_submit" class="research_button"><i class="fas fa-search"></i></button>
+					<button type="submit" id="research_submit" class="research_button">Rechercher</button>
 			</form>
 			<!-- filters part -->
 			<div id="filter_list">
