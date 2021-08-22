@@ -104,8 +104,6 @@
 */			padding: 3px;
 			margin-right: 10px;
 			}
-		#info i{
-		}
 		/*research toolbar styling*/
 			#research_container{
 				display: flex;
@@ -154,15 +152,14 @@
 			.row_filters_container{
 				display: flex;
 			}
-			.column_filters_container{
-				display: block;
-			}
 			.filter{
 				background: white;
 				border: none;
 				font-family: 'Raleway-ExtraBold';
+				display: block;
+				cursor: pointer;
 			}
-			.filter p:first-child{
+			.filter .button_svg{
 				background: #DEEBFF;
 				border-radius: 30px;
 				color: #0065FC;
@@ -178,6 +175,7 @@
 				padding: 11.3px 15px 11.3px 52px;
 				border-radius: 30px;
 				border: 2px solid #F2F2F2;
+				display: block;
 			}
 			.filter:hover .filter_label{
 				background: #0065FC;
