@@ -83,6 +83,9 @@
 				font-size: 1rem;
 				margin: 0 5%;
 			}
+			#signin:hover{
+				text-decoration: underline;
+			}
 	/*finder styling*/
 		#finder h1, #finder h2{
 			margin-bottom: 3%;
@@ -142,7 +145,6 @@
 				display: none;
 			}
 			#research{
-				max-width: 78%;
 				flex: 1;
 				padding-left: 1rem;
 				border: none;
@@ -164,8 +166,8 @@
 				border-radius: 30px;
 				color: #0065FC;
 				float: left;
-				height: 42px;
 				width: 42px;
+				height: 42px;
 			}
 			.filter .fas{
 				margin-top: 12.5px;
@@ -189,7 +191,7 @@
 			align-items: center;
 			margin-top: 5%;
 		}
-		.cards{
+		.card{
 			background: white;	
 			width: 95%;
 			margin-bottom: 4vw;
@@ -198,13 +200,13 @@
 			box-shadow: 0vw 0vw 1.5vw rgba(0, 0, 0, 0.4);
 			overflow: hidden;
 		}
-		#accomodation_section .cards{
-			border: 5px white solid;	
-		}	
-		.cards:hover{
+		.card:hover{
 			transform: scale(1.02) ;
 			/*background: content-box radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));*/
 		}
+		#accomodation_section .card{
+			border: 5px white solid;	
+		}	
 		.text_container{
 			display: flex;
 			flex-direction: column;
@@ -244,10 +246,10 @@
 				font-size: 1.4rem;	
 			}
 		/*popular_accomodation cards styling*/
-			#popular_accomodation .cards {
+			.horizontal_card{
 				display: flex;
 			}
-			#popular_accomodation .cards .text_container{
+			.horizontal_card .text_container{
 				width: 62%;
 				text-align: left;
 			}
@@ -256,7 +258,7 @@
 				margin: 0;
 			}
 
-			#popular_accomodation h2 + p{
+			#popular_accomodation .price{
 				margin-top: 5%;
 				margin-bottom: 20%;
 			}
@@ -283,11 +285,11 @@
 			#finded_accomodation h1, #activities_section h1{
 				margin: 4vw 0vw;
 			}
-			#finded_accomodation h2 + p{
+			#finded_accomodation .price{
 				margin: 2% 0%;
 			}
 		/*finded_accomodation cards styling*/
-			#finded_accomodation .cards, #activities_section .cards{
+			.vertical_card{
 				display: flex;
 				flex-direction: column;
 			}
@@ -359,7 +361,15 @@
 		footer li{
 			margin: 2% 0%;
 		}
-
+@media screen and (max-width: 350px){
+	/*limit reseach input on small devices*/
+	#research{
+		max-width: 70%;
+	}
+	.row_filters_container{
+		display: block;
+	}
+}
 /*mediaquerries for tablets that are also valid for PC*/
 @media screen and (min-width: 768px){
 	/*général styling*/
@@ -466,7 +476,7 @@
 			max-width: 65%;
 		}
 	/*finded_accomodation styling*/
-		#finded_accomodation .cards{
+		#finded_accomodation .card{
 			width: 45%;
 			height: 27vw;
 		}
@@ -474,7 +484,7 @@
 		#activities_section .cards_container{
 			height: 140vw;
 		}
-		#activities_section .cards{
+		#activities_section .card{
 			width: 47%;
 		}
 }
@@ -531,7 +541,7 @@
 		#accomodation_section{
 			display: flex;
 		}
-		#accomodation_section .cards{
+		#accomodation_section .card{
 			border: 3px white solid;
 			margin-bottom: 2vw;	
 		}	
@@ -553,9 +563,8 @@
 			background: #F2F2F2;
 			width: 60%;
 		}
-		#finded_accomodation .cards{
+		#finded_accomodation .card{
 			width: 29%;
-			/*height: 11vw;*/
 		}
 		#finded_accomodation .pic_container{
 			max-height: 5.2rem;
@@ -582,20 +591,20 @@
 			justify-content: space-between;
 			align-content: space-between;
 			align-items: center;
-			height: 44vh;
+			height: 21rem;
 		}
-		#activities_section .cards{
+		#activities_section .card{
 			width: 23%;
 			margin: 0;
 		}
-		/*sizing of activity section's cards */
-		#activities_section .cards:nth-child(3n+1){
+		/*sizing of activity section's card */
+		#activities_section .card:nth-child(3n+1){
 			height: 100%;
 		}
-		#activities_section .cards:nth-child(4n+2){
+		#activities_section .card:nth-child(4n+2){
 			height: 54%;
 		}		
-		#activities_section .cards:nth-child(2n+3){
+		#activities_section .card:nth-child(2n+3){
 			height: 38%;
 		}
 	/*footer styling*/
