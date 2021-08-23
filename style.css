@@ -87,7 +87,7 @@
 				text-decoration: underline;
 			}
 	/*finder styling*/
-		#finder h1, #finder h2{
+		#finder h2{
 			margin-bottom: 3%;
 		}
 		#info{
@@ -202,7 +202,6 @@
 		}
 		.card:hover{
 			transform: scale(1.02) ;
-			/*background: content-box radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));*/
 		}
 		#accomodation_section .card{
 			border: 5px white solid;	
@@ -226,23 +225,23 @@
 			margin-right: 1px;
 		}
 	/*accomodation styling*/
-		#accomodation_section{
-		}
 		#popular_accomodation, #finded_accomodation, #activities_section, footer, #finder{
 				margin-top: 5%;
 				padding: 4vw;
 			}
+		.section_title{
+				margin: 4vw 0vw;
+		}
 		/*popular_accomodation styling*/
 			#popular_accomodation{
 				background: #F2F2F2;
 			}
-			.title{
+			.ilustrated_section_title{
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				margin: 4vw 2vw;
 			}
-			.title p{
+			.ilustrated_section_title p{
 				font-size: 1.4rem;	
 			}
 		/*popular_accomodation cards styling*/
@@ -282,8 +281,8 @@
 				font-size: 1rem;
 				font-weight: bold;
 			}
-			#finded_accomodation h1, #activities_section h1{
-				margin: 4vw 0vw;
+			#show_more:hover{
+				text-decoration: underline;
 			}
 			#finded_accomodation .price{
 				margin: 2% 0%;
@@ -414,7 +413,7 @@
 			margin-bottom: 10px;
 		}
 		#research_container{
-			margin: 2% 0% 3% 0%;
+			margin: 0.6rem 0 1.2rem 0;
 		}
 		#mobile_research_submit{
 			display: none;
@@ -428,9 +427,8 @@
 			display: flex;
 			flex-direction: row;
 		}
-	/*accomodation styling*/
-		.title, #finded_accomodation h1, #activities_section h1{
-			margin: 1vw 0 2vw 0;
+		#info{
+			align-items: center;
 		}
 	/*popular_accomodation styling*/
 		#popular_accomodation, #finded_accomodation{
@@ -475,6 +473,10 @@
 		#research_container{
 			max-width: 65%;
 		}
+	/*accomodation styling*/
+		.section_title{
+			margin: 1vw 0 2vw 0;
+		}
 	/*finded_accomodation styling*/
 		#finded_accomodation .card{
 			width: 45%;
@@ -498,7 +500,7 @@
 			font-size: 0.9rem;
 		}
 		h2{
-			font-size: 0.7rem;
+			font-size: 0.8rem;
 		}
 		#accomodation_section, #finder, #activities_section{
 			margin-top: 15px;
@@ -535,39 +537,42 @@
 		}
 	/*accomodation styling*/
 		#popular_accomodation, #finded_accomodation{
-			padding: 1vw 3vw;
+			padding: 0.75rem 1.5rem 0 1.5rem;
+		}
+		.section_title{
+			margin: 0.8rem 0;
 		}
 		/*changing order of finded_accomodation and popular accomodation*/
 		#accomodation_section{
 			display: flex;
+			justify-content: space-between;
 		}
 		#accomodation_section .card{
 			border: 3px white solid;
-			margin-bottom: 2vw;	
+			margin-bottom: 1.4rem;	
 		}	
 		#popular_accomodation{
 			order: 2;
-			width: 25%;
+			width: 26%;
 		}
 		#popular_accomodation, #finded_accomodation{
 			background: #F2F2F2;
 			border-radius: 20px;
 			margin-top: 0;
 		}
-		#popular_accomodation, #finded_accomodation, #activities_section{
-			margin-right: 1vw;
-			margin-left: 1vw;
-		}
+		.ilustrated_section_title p{
+				font-size: 1rem;	
+			}
 		#finded_accomodation{
 			order: 1;
 			background: #F2F2F2;
-			width: 60%;
+			width: 62%;
 		}
 		#finded_accomodation .card{
-			width: 29%;
+			width: 31%;
 		}
 		#finded_accomodation .pic_container{
-			max-height: 5.2rem;
+			max-height: 5.5rem;
 		}
 		#pc4 img, #pc5 img,#pc6 img {
 			bottom: 15px;
@@ -583,7 +588,7 @@
 		}
 	/*activities_section styling*/
 		#activities_section{
-			padding: 1vw 0vw;
+			padding: 0.8rem 0;
 		}
 		#activities_section .cards_container{
 			display: flex;
@@ -610,6 +615,7 @@
 	/*footer styling*/
 		footer{
 			font-size: 0.8rem;
+			margin-top: 2.2rem;
 		}
 		footer li{
 			margin: 5% 0%;
