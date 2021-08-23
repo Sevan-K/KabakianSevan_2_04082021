@@ -109,7 +109,6 @@
 				display: flex;
 				border: 1px solid #F2F2F2;
 				width: 90%;
-				max-width: 450px;
 				display: flex;
 				padding: 0;
 				margin: 7% 0;
@@ -127,7 +126,7 @@
 			}
 			#research_label, .research_button{
 				margin: 0;
-				padding: 4% 5%;
+				padding: 0.8em 1em;
 				font-size: 1rem;
 			}
 			.research_button{
@@ -143,10 +142,11 @@
 				display: none;
 			}
 			#research{
+				max-width: 78%;
 				flex: 1;
 				padding-left: 1rem;
 				border: none;
-				font-size: 120%;
+				font-size: 1rem;
 			}
 		/*filters styling*/
 			.row_filters_container{
@@ -180,7 +180,7 @@
 			.filter:hover .filter_label{
 				background: #0065FC;
 				border: 2px solid white;
-				color: white;				
+				color: white;
 			}
 	/*cards styling*/
 		.cards_container{
@@ -365,6 +365,7 @@
 	/*général styling*/
 		#main_wrapper{
 			width: 95%;
+			max-width: 1024px;
 			margin: auto;
 		}
 		#activities_section{
@@ -460,6 +461,10 @@
 		#logo_reservia img{
 			width: 25%;
 		}
+	/*fider edit*/
+		#research_container{
+			max-width: 65%;
+		}
 	/*finded_accomodation styling*/
 		#finded_accomodation .cards{
 			width: 45%;
@@ -496,6 +501,18 @@
 			width: 15%;
 		}
 	/*finder styling*/
+		#research_container{
+			max-width: 20%;	
+		}
+		.research_label, .research_button, #research{
+			font-size: 0.7rem;
+		}
+		#research_label{
+			padding: 0.5em 0.9em;
+		}
+		.research_button{
+			padding: 0.5em 1em;
+		}
 		#filter_list{
 			display: flex;
 			align-items: center;
@@ -541,7 +558,7 @@
 			/*height: 11vw;*/
 		}
 		#finded_accomodation .pic_container{
-			max-height: 7vw;
+			max-height: 5.2rem;
 		}
 		#pc4 img, #pc5 img,#pc6 img {
 			bottom: 15px;
@@ -565,10 +582,10 @@
 			justify-content: space-between;
 			align-content: space-between;
 			align-items: center;
-			height: 40vh;
+			height: 44vh;
 		}
 		#activities_section .cards{
-			width: 22%;
+			width: 23%;
 			margin: 0;
 		}
 		/*sizing of activity section's cards */
@@ -576,10 +593,10 @@
 			height: 100%;
 		}
 		#activities_section .cards:nth-child(4n+2){
-			height: 56%;
+			height: 54%;
 		}		
 		#activities_section .cards:nth-child(2n+3){
-			height: 36%;
+			height: 38%;
 		}
 	/*footer styling*/
 		footer{
