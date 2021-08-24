@@ -17,16 +17,16 @@
 		#main_wrapper{
 			width: 100%;	}
 		body{
-			font-family: 'Raleway',sans-serif,Verdana;
+			font-family: 'Raleway', sans-serif, Verdana;
 			font-size: 0.9rem;
 		}
 		h1{
-			font-family: 'Raleway-ExtraBold' ;
+			font-family: 'Raleway-ExtraBold',sans-serif, Verdana;
 			font-size: 1.4rem;
 		}
 		h2{
-			font-family: 'Raleway-ExtraBold' ;
-			font-size: 0.9rem;
+			font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
+			font-size: 1.05rem;
 		}
 		h1, h2,h3,p, ul{
 			margin: 0;
@@ -38,6 +38,9 @@
 		a{
 			text-decoration: none;
 			color: black;
+		}
+		.hover_underlined:hover{
+			text-decoration: underline;
 		}
 	/*header styling*/
 		/*using flexbox for placing the blocks*/
@@ -78,13 +81,10 @@
 				width: 100%;
 			}
 			#signin{
-				font-family: 'Raleway-ExtraBold' ;
+				font-family: 'Raleway-ExtraBold',sans-serif, Verdana ;
 				color: #0065FC;
 				font-size: 1rem;
 				margin: 0 5%;
-			}
-			#signin:hover{
-				text-decoration: underline;
 			}
 	/*finder styling*/
 		#finder h2{
@@ -115,9 +115,10 @@
 				display: flex;
 				padding: 0;
 				margin: 7% 0;
+				overflow: hidden;
 			}
 			#research,.research_button, #research_label{
-				font-family: 'Raleway-ExtraBold';
+				font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
 			}
 			.research_button, #research_container{
 				border-radius: 0.8rem;
@@ -135,7 +136,7 @@
 			.research_button{
 				border: 0;
 				background: #0065FC;
-				color: white;				
+				color: white;
 			}
 			.research_button:hover{
 				background: #DEEBFF;
@@ -145,6 +146,7 @@
 				display: none;
 			}
 			#research{
+				min-width: 100px ;
 				flex: 1;
 				padding-left: 1rem;
 				border: none;
@@ -157,7 +159,7 @@
 			.filter{
 				background: white;
 				border: none;
-				font-family: 'Raleway-ExtraBold';
+				font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
 				display: block;
 				cursor: pointer;
 			}
@@ -249,11 +251,11 @@
 				display: flex;
 			}
 			.horizontal_card .text_container{
-				width: 62%;
+				width: 60%;
 				text-align: left;
 			}
 			#popular_accomodation .pic_container{
-				width: 38%;
+				width: 40%;
 				margin: 0;
 			}
 
@@ -281,10 +283,7 @@
 				font-size: 1rem;
 				font-weight: bold;
 			}
-			#show_more:hover{
-				text-decoration: underline;
-			}
-			#finded_accomodation .price{
+		#finded_accomodation .price{
 				margin: 2% 0%;
 			}
 		/*finded_accomodation cards styling*/
@@ -361,12 +360,12 @@
 			margin: 2% 0%;
 		}
 @media screen and (max-width: 350px){
-	/*limit reseach input on small devices*/
-	#research{
-		max-width: 70%;
-	}
+	/*the filters are all presented in colomn*/
 	.row_filters_container{
 		display: block;
+	}
+	#research_container{
+				width: 95%;
 	}
 }
 /*mediaquerries for tablets that are also valid for PC*/
