@@ -20,15 +20,15 @@
 			font-family: 'Raleway', sans-serif, Verdana;
 			font-size: 0.9rem;
 		}
-		h1{
+		h1, h2{
 			font-family: 'Raleway-ExtraBold',sans-serif, Verdana;
 			font-size: 1.4rem;
 		}
-		h2{
+		h3{
 			font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
 			font-size: 1.05rem;
 		}
-		h1, h2,h3,p, ul{
+		h1, h2, h3, h4, p, ul{
 			margin: 0;
 		}
 		ul{
@@ -87,7 +87,7 @@
 				margin: 0 5%;
 			}
 	/*finder styling*/
-		#finder h2{
+		#finder h3{
 			margin-bottom: 3%;
 		}
 		#info{
@@ -313,7 +313,7 @@
 		#activities_section .pic_container{
 			height: 35vw;
 		}
-		#activities_section h2{
+		#activities_section h3{
 			margin: 5%;
 		}
 		#pc10{
@@ -353,7 +353,7 @@
 		footer div{
 			padding: 4% 0%;
 		}
-		footer h3{
+		footer h4{
 			margin-bottom: 4%;
 		}
 		footer li{
@@ -365,7 +365,7 @@
 		display: block;
 	}
 	#research_container{
-				width: 95%;
+		width: 95%;
 	}
 }
 /*mediaquerries for tablets that are also valid for PC*/
@@ -470,7 +470,7 @@
 		}
 	/*fider edit*/
 		#research_container{
-			max-width: 65%;
+			max-width: 60%;
 		}
 	/*accomodation styling*/
 		.section_title{
@@ -495,10 +495,10 @@
 		body{
 			font-size: 0.7rem;
 		}
-		h1{
+		h1, h2{
 			font-size: 0.9rem;
 		}
-		h2{
+		h3{
 			font-size: 0.8rem;
 		}
 		#accomodation_section, #finder, #activities_section{
@@ -513,7 +513,7 @@
 		}
 	/*finder styling*/
 		#research_container{
-			max-width: 20%;	
+			max-width: 30%;	
 		}
 		.research_label, .research_button, #research{
 			font-size: 0.7rem;
