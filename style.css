@@ -15,18 +15,22 @@
 /*mobile part styling media querries need to added*/
 	/*General styling*/
 		#main_wrapper{
-			width: 100%;	}
+			width: 100%;
+		}
+		/*for better experience when using inter link*/
+		html{
+			scroll-behavior: smooth;
+		}
 		body{
 			font-family: 'Raleway', sans-serif, Verdana;
-			font-size: 0.9rem;
 		}
 		h1, h2{
 			font-family: 'Raleway-ExtraBold',sans-serif, Verdana;
-			font-size: 1.4rem;
+			font-size: 1.25rem;
 		}
-		h3{
+		h3, .filter_list_title{
 			font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
-			font-size: 1.05rem;
+			font-size: 0.95rem;
 		}
 		h1, h2, h3, h4, p, ul{
 			margin: 0;
@@ -65,29 +69,31 @@
 			nav	a{
 				flex: 1;
 				color: #000000;
-				font-size: 1rem;
+				font-size: 0.9rem;
 				border-bottom: 0.7vw solid #F2F2F2;
 				padding-bottom: 5%;
 			}
 			nav a:hover{
 				color: #0065FC;
 				border-bottom: 0.7vw solid #0065FC;
+				transition-timing-function: ease-in;
+				transition-duration: 0.2s;
 			}
-			#logo_reservia{
+			.logo_container{
 				margin: 5%;
 				width: 25%;
 			}
-			#logo_reservia img{
+			.logo_reservia{
 				width: 100%;
 			}
 			#signin{
 				font-family: 'Raleway-ExtraBold',sans-serif, Verdana ;
 				color: #0065FC;
-				font-size: 1rem;
+				font-size: 0.9rem;
 				margin: 0 5%;
 			}
 	/*finder styling*/
-		#finder h3{
+		.filter_list_title{
 			margin-bottom: 3%;
 		}
 		#info{
@@ -130,16 +136,12 @@
 			#research_label, .research_button{
 				margin: 0;
 				padding: 0.8em 1em;
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 			.research_button{
 				border: 0;
 				background: #0065FC;
 				color: white;
-			}
-			.research_button:hover{
-				background: #DEEBFF;
-				color: #0065FC;				
 			}
 			#research_button_text{
 				display: none;
@@ -149,7 +151,7 @@
 				flex: 1;
 				padding-left: 1rem;
 				border: none;
-				font-size: 1rem;
+				font-size: 0.9rem;
 			}
 		/*filters styling*/
 			.row_filters_container{
@@ -190,6 +192,8 @@
 				background: #0065FC;
 				border: 2px solid white;
 				color: white;
+				transition-timing-function: ease-in;
+				transition-duration: 0.2s;
 			}
 	/*cards styling*/
 		.cards_container{
@@ -208,7 +212,10 @@
 			overflow: hidden;
 		}
 		.card:hover{
-			transform: scale(1.02) ;
+			transform: scale(1.02);
+			transition-timing-function: ease-in;
+			transition-duration: 0.1s;
+
 		}
 		#accomodation_section .card{
 			border: 5px white solid;	
@@ -221,7 +228,7 @@
 		}
 		.star_container{
 			display: inline-flex;
-			font-size: 90%;
+			font-size: 80%;
 		}
 		.blue_star{
 			color: #0065FC;
@@ -249,7 +256,7 @@
 				align-items: center;
 			}
 			.ilustrated_section_title p{
-				font-size: 1.4rem;	
+				font-size: 1.25rem;	
 			}
 		/*popular_accomodation cards styling*/
 			.horizontal_card{
@@ -285,7 +292,7 @@
 			}			
 		/*finded_accomodation styling*/
 			#show_more{
-				font-size: 1rem;
+				font-size: 0.9rem;
 				font-weight: bold;
 			}
 		#finded_accomodation .price{
@@ -358,7 +365,7 @@
 		footer div{
 			padding: 4% 0%;
 		}
-		footer h4{
+		footer p{
 			margin-bottom: 4%;
 		}
 		footer li{
@@ -374,7 +381,7 @@
 	}
 }
 /*mediaquerries for tablets that are also valid for PC*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 650px){
 	/*général styling*/
 		#main_wrapper{
 			width: 95%;
@@ -387,9 +394,6 @@
 	/*header styling*/
 		#signin{
 			order: 3;
-		}
-		#signin, nav a{
-			font-size: 0.9rem;
 		}
 		nav{
 			width: 20%;
@@ -405,7 +409,7 @@
 			border-top: 0.2vw solid #0065FC;
 			border-bottom: none;
 		}
-		#logo_reservia{
+		.logo_container{
 			margin: 0;
 			flex: 1;
 		}
@@ -466,13 +470,13 @@
 		}
 }
 /*mediaquerries only for tablets*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 650px) and (max-width: 1023px){
 	/*general styling*/
 		#popular_accomodation, #finded_accomodation{
 			padding: 3vw;
 		}
 	/*header styling*/
-		#logo_reservia img{
+		.logo_reservia{
 			width: 25%;
 		}
 	/*fider edit*/
@@ -499,8 +503,8 @@
 /*mediaquerries only for desktop*/
 @media screen and (min-width: 1024px){
 	/*general styling*/
-		body{
-			font-size: 0.7rem;
+		.price, #info > p, #finder > p {
+			font-size: 0.8rem;
 		}
 		h1, h2{
 			font-size: 0.9rem;
@@ -515,10 +519,14 @@
 			margin-top: 0;
 		}
 	/*header styling*/
-		#logo_reservia img{
+		.logo_reservia{
 			width: 15%;
 		}
 	/*finder styling*/
+		.filter_list_title{
+			margin-bottom: 0;
+			font-size: 0.9rem;
+		}
 		#research_container{
 			max-width: 30%;	
 		}
@@ -534,9 +542,6 @@
 		#filter_list{
 			display: flex;
 			align-items: center;
-		}
-		#filter_list h2{
-			margin-bottom: 0;
 		}
 		.filter{
 			margin: 0 0 0 15px;
