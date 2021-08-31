@@ -296,7 +296,7 @@
 				font-size: 0.9rem;
 				font-weight: bold;
 			}
-		#finded_accomodation .price{
+			#finded_accomodation .price{
 				margin: 2% 0%;
 			}
 		/*finded_accomodation cards styling*/
@@ -568,7 +568,6 @@
 			}
 		#finded_accomodation{
 			order: 1;
-			background: #F2F2F2;
 			width: 62%;
 		}
 		#finded_accomodation .card{
