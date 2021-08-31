@@ -218,7 +218,7 @@
 			transition-duration: 0.1s;
 
 		}
-		#accomodation_section .card{
+		.card_border{
 			border: 5px white solid;	
 		}	
 		.text_container{
@@ -550,7 +550,7 @@
 			display: flex;
 			justify-content: space-between;
 		}
-		#accomodation_section .card{
+		.card_border{
 			border: 3px white solid;
 			margin-bottom: 1.4rem;	
 		}	
