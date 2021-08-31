@@ -160,7 +160,6 @@
 			}
 			.filter{
 				background: white;
-				border: none;
 				font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
 				display: flex;
 				align-items: center;
@@ -276,19 +275,16 @@
 				margin-top: 5%;
 				margin-bottom: 20%;
 			}
-			#pc1{
+			.pc1{
 				background: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) no-repeat;
-				background-size: cover ;
 				background-position: center;
 			}
-			#pc2{
+			.pc2{
 				background: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) no-repeat;
-				background-size: cover ;
 				background-position: center;
 			}			
-			#pc3{
+			.pc3{
 				background: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) no-repeat;
-				background-size: cover ;
 				background-position: center;
 			}			
 		/*finded_accomodation styling*/
@@ -313,13 +309,13 @@
 				width: 100%;
 				position: relative;
 			}
-			#pc4 img, #pc5 img,#pc6 img,#pc8 img {
+			.pc4 img, .pc5 img,.pc6 img,.pc8 img {
 				bottom: 50px;
 			}
-			#pc7 img{
+			.pc7 img{
 				bottom: 72px;
 			}
-			#pc9 img{
+			.pc9 img{
 				bottom: 180px;
 			}
 	/*activities styling*/
@@ -329,35 +325,32 @@
 		#activities_section h3{
 			margin: 5%;
 		}
-		#pc10{
+		.pc10{
 			background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 20%;
 		}		
-		#pc11{
+		.pc11{
 			background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 45%;
 		}		
-		#pc12{
+		.pc12{
 			background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 20%;
 		}		
-		#pc13{
+		.pc13{
 			background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 10%;
 		}		
-		#pc14{
+		.pc14{
 			background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 20%;
 		}
-		#pc15{
+		.pc15{
 			background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat;
-			background-size: cover;
 			background-position: 50% 20%;
+		}
+		.pic_container{
+			background-size: cover ;
 		}
 	/*footer styling*/
 		footer{
@@ -576,16 +569,16 @@
 		#finded_accomodation .pic_container{
 			max-height: 5.5rem;
 		}
-		#pc4 img, #pc5 img,#pc6 img {
+		.pc4 img, .pc5 img,.pc6 img {
 			bottom: 15px;
 		}	
-		#pc7 img{
+		.pc7 img{
 			bottom: 20px;
 		}
-		#pc8 img{
+		.pc8 img{
 			bottom: 0px;
 		}
-		#pc9 img{
+		.pc9 img{
 			bottom: 65px;
 		}
 	/*activities_section styling*/
