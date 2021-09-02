@@ -26,11 +26,11 @@
 		}
 		h1, h2{
 			font-family: 'Raleway-ExtraBold',sans-serif, Verdana;
-			font-size: 1.25rem;
+			font-size: 1.3rem;
 		}
 		h3, .filter_list_title{
 			font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
-			font-size: 0.95rem;
+			font-size: 1rem;
 		}
 		h1, h2, h3, h4, p, ul, body{
 			margin: 0;
@@ -89,7 +89,7 @@
 			#signin{
 				font-family: 'Raleway-ExtraBold',sans-serif, Verdana ;
 				color: #0065FC;
-				font-size: 0.9rem;
+				font-size: 1rem;
 				margin: 0 5%;
 			}
 	/*finder styling*/
