@@ -32,7 +32,7 @@
 			font-family: 'Raleway-ExtraBold', sans-serif, Verdana;
 			font-size: 0.95rem;
 		}
-		h1, h2, h3, h4, p, ul{
+		h1, h2, h3, h4, p, ul, body{
 			margin: 0;
 		}
 		ul{
@@ -387,7 +387,7 @@
 		nav	a{
 			padding: 20% 5% 20% 5%;
 			border-bottom: none;
-			border-top: 0.2vw solid #F2F2F2;
+			border-top: 0.2vw solid #FFF;
 		}
 		nav a:hover{
 			color: #0065FC;
